@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url('./fonts.css');
+@import url('./reset.css');
+/* common */
+*:not(button)::selection {
+  background: rgb(173, 170, 170);
+  color: #020202;
+}
+button span::selection {
+  background: transparent;
+  color: #000;
+}
+button:hover span::selection {
+  color: #fff;
+}
+
+#app {
+  width: 100%;
+  background: linear-gradient(#fff, #d6dbf1);
+}
+#app #noticeWrap {
+  width: 100%;
+  padding: 83.5px 0;
+}
+#app #noticeWrap .container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 0 70px;
+  background: #161616;
+  overflow: hidden;
+  box-shadow: 0px 20px 15px 10px rgba(0, 0, 0, 0.3);
+}
+#app #noticeWrap .container .title {
+  padding: 70px 0;
+  text-align: center;
+}
+#app #noticeWrap .container .title h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  word-break: keep-all;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+#app #noticeWrap .container .content {
+  width: 100%;
+}
+#app #noticeWrap .container .content #notice-form {
+  width: 100%;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner {
+  width: 100%;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form {
+  width: 100%;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul {
+  width: 100%;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li {
+  margin: 10px 0;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 25px;
+  text-align: center;
+  background: #f8f6eb;
+  transition: background 0.3s ease-in-out;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li input:focus {
+  background: #fff;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li:last-child input {
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li input::placeholder {
+  color: #999;
+}
+
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 20px 15px;
+  font-size: 16px;
+  font: inherit;
+  border-radius: 12px;
+  background: #f8f6eb;
+  transition: background 0.3s ease-in-out;
+  overflow-y: scroll;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li textarea:focus {
+  background: #fff;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li textarea::placeholder {
+  color: #aaa;
+  text-align: center;
+  line-height: 150px;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form ul li textarea::-webkit-scrollbar {
+  display: none;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form .button-wrap {
+  width: 100%;
+  padding: 10px 0 50px;
+  text-align: right;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form .button-wrap button {
+  width: 130px;
+  height: 40px;
+  background: #fff;
+  color: #020202;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form .button-wrap button span {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  margin-left: 13px;
+  transition: border 0.3s ease-in-out;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form .button-wrap button i {
+  display: inline-block;
+  margin-left: 2px;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form .button-wrap button:hover {
+  background: #499;
+  color: #fff;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form .button-wrap button:hover span {
+  border-bottom: 1px solid #fff;
+}
+#app #noticeWrap .container .content #notice-form .notice-inner form .button-wrap button:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
+}
+
+#app #noticeWrap .container .content #notice-form .list-wrap {
+  display: flex;
+  margin: 0 -70px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -5px 20px 5px rgba(255, 255, 255, 0.3);
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner {
+  width: 100%;
+  padding: 30px 0 0;
+  border-radius: 20px 20px 0 0;
+  background: #fff;
+  overflow: hidden;
+  height: 138px;
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner.addCss {
+  padding: 30px 0 20px;
+  height: 800px;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .list-title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 50px;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .list-title h2 {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+  padding-bottom: 6px;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .list-title a {
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 30px;
+  top: 26px;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .list-title a i {
+  font-size: 26px;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 138px);
+  overflow-y: scroll;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap::before {
+  font-family: xeicon !important;
+  content: '비어있습니다 \e96e';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  color: #999;
+  font-weight: 600;
+  left: 0;
+  top: 271px;
+  font-size: 30px;
+  text-align: center;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap.true::before {
+  display: none;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table th {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 15px;
+  padding: 10px 0;
+  height: 40px;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table td {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  height: 36px;
+  color: #666;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table .col01 {
+  width: 13%;
+  font-family: 'Roboto', sans-serif;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table .col02 {
+  width: 70%;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table td.col02 {
+  text-align: left;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table .col02 a {
+  position: relative;
+  display: inline-block;
+  max-width: 96%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 15px 54px 15px 15px;
+  color: #666;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table td.col02 a::after {
+  display: block;
+  width: 45px;
+  height: 22px;
+  line-height: 21px;
+  text-align: center;
+  content: 'New';
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-44%);
+  background: #f54d42;
+  color: #fff;
+  border-radius: 11px;
+  font-size: 12px;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table .col02 a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table .col03 {
+  width: 17%;
+}
+#app #noticeWrap .container .content #notice-form .list-wrap .list-inner .table-wrap table td.col03 {
+  font-family: 'Roboto', sans-serif;
+}
